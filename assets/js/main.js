@@ -27,3 +27,16 @@ const searchBarIsActive = () => navbarForm.classList.toggle('active');
 
 navbarSearchBtn.addEventListener('click', searchBarIsActive);
 navbarFormCloseBtn.addEventListener('click', searchBarIsActive);
+
+
+
+
+// Photo Profile=======================================
+
+let profile = document.querySelector('.profile');
+let menu = document.querySelector('.menu-profile');
+
+profile.onclick = function() {
+    menu.classList.toggle('active');
+}
+// End Photo Profile=======================================
