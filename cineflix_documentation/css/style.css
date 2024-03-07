@@ -171,6 +171,7 @@ pre {
     border-bottom: 1px solid #ddd;
 }
 
+
 #one span {
     color: #8B5CF6;
 }
@@ -193,3 +194,8 @@ pre {
 .tree-viewer-pd{
 	padding:30px;
 }
+
+.content-welcome h4 {
+    line-height: 1.5;
+}
+

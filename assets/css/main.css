@@ -110,13 +110,16 @@ header, nav { background: var(--rich-black-fogra-29); }
 
 nav { margin-right: 200px; }
 
-.navbar-nav { display: flex; }
-
+.navbar-nav-new { display: flex;
+}
 .navbar-nav li:not(:last-child) { margin-right: 60px; }
 
 .navbar-link {
   font-size: var(--fs-sm);
-  font-weight: var(--fw-5);
+  font-weight: bolder;
+  padding-right: 10px;
+  padding-top: 10px;
+
 }
 
 .navbar-link:hover { color: var(--light-azure); }
@@ -215,7 +218,7 @@ nav { margin-right: 200px; }
  * banner card style 
  */
 
-.banner { margin-bottom: 60px; }
+.banner { margin-bottom: 30px; }
 
 .banner-card {
   position: relative;
@@ -612,6 +615,18 @@ input ~ .checked-radio-bg {
   display:         flex;
   justify-content: flex-start;
   align-items:     flex-start;
+}
+
+.live-badge-banner {
+  z-index:99;
+}
+
+.live-badge-banner p{
+  font-size:12px;
+  border-radius:5px;
+  padding:3px;
+  font-weight:bold;
+  background-color: var(--live-indicator);
 }
 
 .live-card .avatar {
