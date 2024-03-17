@@ -46,9 +46,7 @@
  * reused style
  */
 
-header, nav { 
-  background: var(--rich-black-fogra-29);
- }
+header, nav { background: var(--rich-black-fogra-29); }
 
 .navbar,
 .banner,
@@ -222,7 +220,6 @@ nav { margin-right: 200px; }
 
 .banner { 
   margin-bottom: 30px; 
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .banner-card {
@@ -247,20 +244,8 @@ nav { margin-right: 200px; }
 .banner-card .card-info {
   display:     flex;
   align-items: center;
-  margin-bottom: 20px;
 }
 
-.banner-card .card-info div {
-  display:     flex;
-  align-items: center;
-  margin-right: 20px;
-}
-
-.banner-card .card-info ion-icon {
-  font-size: 20px;
-  color: var(--azure);
-  margin-right: 5px;
-}
 
 .banner-card .card-info span { font-weight: var(--fw-6); }
 
@@ -856,156 +841,3 @@ ul .link-item:not(:last-child) { margin-bottom: 10px; }
       font-size: 1.2em;
     }
 /* =======End profile image============================= */
-
-
-
-
-
-
-
-
-
-
-/* =======button icon============================= */
-    /* Your CSS styles for button icons */
-    .button-icon {
-      font-size:16px;
-      color: #fff;
-      border: none;
-      border-width:7px;
-      padding-left:5px;
-      border-radius: 50%; /* Rounded corners */
-      cursor: pointer;
-      display: inline-flex; /* To align icon and text horizontally */
-      align-items: center; /* To vertically center icon and text */
-      border: 2px solid var(--border-color-checked, #fff);
-    }
-    .button-icon:hover {
-      outline-color: #fff;
-    }
-    .button-icon ion-icon {
-      margin: 5px; /* Space between icon and text */
-    }
-/* =======End button icon============================= */
-
-
-
-
-/* =======modal card hover============================= */
-
-
-.container-show-hover{
-  background-color: #008B8B;
-  width:50%;
-  height:50%;
-}
-.cellphone-container{  
-  width:75px;
-  height:50px;
-  background-color: #008B8B;
-  margin : 60px auto 0 auto;
-  box-shadow:5px 5px 115px -14px black;
-  border-radius: 4px;
-}
-.menu {
-  background-color: #008B8B;
-
-  position: absolute;
-  right: 12px;
-  top: 6px;
-  z-index: 999;
-  i {
-    font-size: 20px;
-    color: $brand-color;
-    filter: drop-shadow(4px 4px 10px rgba(0,0,0,.5));
-  }
-}
-.movie-img {
-  
-  width:100%;
-  height:200px;
-  /*
-  // background-image: url(https://i.ibb.co/FDGqCmM/papers-co-ag74-interstellar-wide-space-film-movie-art-33-iphone6-wallpaper.jpg);
-  */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index:111 !important;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
-      color-stop(0.00,  rgba(0,0,0,1)),
-      color-stop(0.35,  rgba(0,0,0,1)),
-      color-stop(0.50,  rgba(0,0,0,1)),
-      color-stop(0.65,  rgba(0,0,0,1)),
-      color-stop(0.85,  rgba(0,0,0,0.6)),
-      color-stop(1.00,  rgba(0,0,0,0)));
-  position:relative;
-
-}
-
-.movie{
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+39,1e1b26+53&0+38,1+55 */
-background: -moz-linear-gradient(top,  rgba(255,255,255,0) 38%, rgba(255,255,255,0.06) 39%, rgba(30,27,38,0.88) 53%, rgba(30,27,38,1) 55%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 38%,rgba(255,255,255,0.06) 39%,rgba(30,27,38,0.88) 53%,rgba(30,27,38,1) 55%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(255,255,255,0) 38%,rgba(255,255,255,0.06) 39%,rgba(30,27,38,0.88) 53%,rgba(30,27,38,1) 55%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#1e1b26',GradientType=0 ); /* IE6-9 */
-
-  position:fixed;
-  background-size: contain;
-  background-size: cover;
-  z-index:1 !important;
-  margin-top:20px;
-  width:300px;
-  height:60px;
-  display:block;
-  border-radius:4px;
-}
-
-
-/* TYPOGRAPHY ENDS */
-
-/** GRID STARTS **/
-
-.thegrid { margin: 0 auto; }
-
-.elements-distance{margin:0px}
-
-.mr-grid { width: 100%; }
-    .mr-grid:before, .mr-grid:after { content: ""; display: table; }
-    .mr-grid:after { clear: both; }
-    .mr-grid { *zoom: 1; }
-
-.col1, .col2, .col3, .col3rest, .col4, .col4rest, .col5, .col5rest, .col6, .col6rest{ 
-  margin:0% 0.5% 0.5% 0.5%;
-    padding:1%;
-    float: left;
-    display: block;
-}
-
-/* Columns match, minus margin sum. E.G. margin-left+margin-right=1%, col2=50%-1% - added padding:1%*/
-
-.col1 { width: 98%; }
-.col2 { width: 47%; }
-.col3 { width: 30.3333333333%; }
-.col4 { width: 22%; }
-.col5 { width: 17%; }
-.col6 {width:13.6666666667%;}
-
-  
-/* Columns match with their individual number. E.G. col3+col3rest=full width row */
-
-.col3rest { width: 63.6666666667%; }
-.col4rest { width: 72%; }
-.col5rest { width: 77%; }
-.col6rest { width: 80.3333333333%;}
-
-.dribbble-link {
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  border-radius: 50px;
-}
-/* =======end modal card hover============================= */
